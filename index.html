@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Paleta de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerador de Paleta de Cores</h1>
+        <p>Faça o upload de uma imagem para extrair a paleta de cores.</p>
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <div class="image-preview">
+            <img id="imagePreview" src="" alt="Prévia da imagem do usuário">
+        </div>
+
+        <div id="paletteContainer" class="palette-container"></div>
+    </div>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

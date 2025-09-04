@@ -1,0 +1,80 @@
+/*Importando uma fonte bonita do Google Fonts*/
+@import url('https:fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0  4px 12px rgba(0, 0, 0, 0,1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+input [type="file"] {
+    margin-bottom: 20px;
+}
+
+.image-preview {
+    margin-bottom: 20px;
+    min-height: 50px; /*Garente que o espaço não "pule" */
+    display: flex;
+    justify-content: center;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 8px;
+    display: none; /* A imagem começa escondida*/
+}
+
+.palette-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /*Permite que as cores quebrem a linha em telas pequenas*/
+}
+
+.color-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
